@@ -1,0 +1,11 @@
+Data Peserta Bootcamp Digital Skill - Golang Backend Development
+1. Nama: Andhika Ditya Bagaskara D.
+2. Email: adbagas05@gmail.com
+3. Sistem Operasi yang digunakan: Windows 11
+4. Akun Github: Kadigas
+5. Akun Telegram: @Kadigas
+6. Status (Bekerja/Mahasiswa): Mahasiswa
+7. Umur: 20
+8. Pernah menggunakan Go? : Belum
+9. Bahasa Pemrograman yg pernah dipelajari: C, C++, Python, Java, JavaScript, TypeScript, PHP, SQL
+10. Pernah membuat REST API? : Belum
