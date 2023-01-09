@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 type buah struct {
 	nama       string
@@ -105,6 +108,14 @@ func main() {
 
 	for idx, film := range dataFilm {
 		fmt.Printf("%d. ", idx+1)
-		fmt.Printf("title : %s\nduration : %d jam\ngenre : %s\nyear : %d\n", film.title, film.duration/60, film.genre, film.year)
+		values := reflect.ValueOf(film)
+		types := values.Type()
+		for i := 0; i < values.NumField(); i++ {
+			if types.Field(i).Name == "duration" {
+				fmt.Println(types.Field(i).Name, ":", film.duration/60, "jam")
+			} else {
+				fmt.Println(types.Field(i).Name, ":", values.Field(i))
+			}
+		}
 	}
 }
