@@ -16,6 +16,13 @@ type Car struct {
 
 var CarDatas = []Car{}
 
+func IndexCar(ctx *gin.Context) {
+	car := CarDatas
+	ctx.JSON(http.StatusOK, gin.H{
+		"car": car,
+	})
+}
+
 func CreateCar(ctx *gin.Context) {
 	var newCar Car
 

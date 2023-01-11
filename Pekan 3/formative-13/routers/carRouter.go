@@ -9,6 +9,8 @@ import (
 func StartSever() *gin.Engine {
 	router := gin.Default()
 
+	router.GET("/cars", controllers.IndexCar)
+
 	router.POST("/cars", controllers.CreateCar)
 
 	router.PUT("/cars/:carID", controllers.UpdateCar)
